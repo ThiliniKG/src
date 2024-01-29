@@ -1,3 +1,6 @@
+<?php 
+$title="ex1";
+include "header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,8 +58,7 @@
   <img src="images/image24.png" alt="Web development">
 </body>
 </html>
-
-
+<?php include "footer.php" ?>
 
 
 
