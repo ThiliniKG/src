@@ -10,7 +10,7 @@ include "header.php" ?>
    Email:<input type="email" name="email"required> <br> <br>
    DOB:<input type="date" name="dob"> <br> <br>
    select color:<input type="color" name="color"> <br> <br>
-
+   <input type="Submit" value="submit">
 
 </form>    
 
