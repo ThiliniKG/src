@@ -31,7 +31,7 @@
                 <a class="nav-link active"  href="ex2.php">ex2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active"  href="ex3.php">Menu</a>
+                <a class="nav-link active"  href="ex3.php">ex3</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"  href="#services">Services</a>
