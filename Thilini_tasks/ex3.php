@@ -1,7 +1,20 @@
 <?php
-$title="ex3";
+$title="ex3:Variable, Strings & Operators";
 include "header.php" ?>
 
-<p> ex2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, nam atque ratione temporibus tempore voluptatum consequuntur. Repellendus voluptatem iusto libero ullam atque praesentium autem? Fugit, nulla? Ducimus tenetur minima ullam!
+<h1> 3.2 Create a simple HTML form to collect the user’s Firstname and Lastname. Use the echo statement to 
+    print “Hello [Firstname] [Lastname], You are welcome to my site".inside an h3.”</h1>
+
+<form>
+   Name:<input type="text" name="nimi"required> <br> <br>
+   Email:<input type="email" name="email"required> <br> <br>
+   DOB:<input type="date" name="dob"> <br> <br>
+   select color:<input type="color" name="color"> <br> <br>
+
+
+</form>    
+
+
+
 
 <?php include "footer.php" ?>
