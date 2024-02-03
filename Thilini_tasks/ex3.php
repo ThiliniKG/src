@@ -54,7 +54,7 @@ link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
 <h4>3.4 HTML Table: Prepare a simple HTML table and apply Bootstrap styles to it. 
     Note, you have already done a table in Exercise 1. If you wish, you can use the same table.
 </h4>
-<table class="table">
+<table class="table table-bordered">
 
     <thead class="thead-dark">
 
