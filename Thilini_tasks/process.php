@@ -3,17 +3,6 @@ $title="Your Information";
 include "header.php" ?>
 
 
-
-<form method="post" action= "ex3.php">
-
-FirstName:<input type="text"  name="firstName" placeholder="Enter your first name" required><br><br>
-
-Lastname:<input type="text"  name="lastName" placeholder="Enter your last name" required><br><br>      
-
-<button type="submit" class="btn btn-primary">Submit</button>
-
-</form>
-
 <?php
 
 
