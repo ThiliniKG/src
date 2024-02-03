@@ -1,5 +1,5 @@
 <?php
-$title="ex3:Variable, Strings & Operators";
+$title="ex3";
 include "header.php" ?>
 
 
@@ -13,7 +13,7 @@ include "header.php" ?>
 <h2> 3.2 Create a simple HTML form to collect the user’s Firstname and Lastname. Use the echo statement to 
     print “Hello [Firstname] [Lastname], You are welcome to my site".inside an h3.”</h2>
 
-<form method="post" action= <?php htmlspecialchars($_SERVER["PHP_SELF"]);?>>
+<form method="post" action= "process.php">
 
 FirstName:<input type="text"  name="firstName" placeholder="Enter your first name" required><br><br>
 
