@@ -39,16 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <br>
 
 
-<h4> 3.3 Bootstrap Styling: Apply Bootstrap styles to the form. 
-    Make sure to include the Bootstrap CSS link in your <head> tag. 
-</h4>
-
-link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<br>
 <body>
-
 
 
 <h4>3.4 HTML Table: Prepare a simple HTML table and apply Bootstrap styles to it. 
