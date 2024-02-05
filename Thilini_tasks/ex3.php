@@ -113,14 +113,7 @@ echo "<p>Length of the String: " . strlen($combinedString) . "</p>";
 <h4> 3.8 File Modification Time: Write a PHP script in the footer section of your universal footer to display the last modification time of a file. 
 </h4>
 
-<footer >
-    <h3>File Modification Time</h3>
-    <?php
-    $filename = basename($_SERVER['PHP_SELF']);
-    $lastModifiedTime = filemtime($filename);
-    echo "<p>Last Modified: " . date("F d Y H:i:s.", $lastModifiedTime) . "</p>";
-    ?>
-    </footer>
+
 
  
     <!-- Bootstrap JS and jQuery (optional, for Bootstrap features) -->

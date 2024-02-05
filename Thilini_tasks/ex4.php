@@ -18,8 +18,8 @@ include "header.php" ?>
     </form>
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-         $name = $_POST['name'];
-        $age = $_POST['age'];
+        $name = $_POST["name"];
+        $age = $_POST["age"];
 
         if ($age >= 18) {
         echo "<p>$name, you are eligible for voting.</p>";
@@ -49,29 +49,53 @@ include "header.php" ?>
 
  
 <h3> 4.4 For Loop: Write a PHP script that will print the multiplication table of a number </h3>
-        <div class="mb-4">
         
-            <?php
-            $numberForTable = 5; 
-            for ($i = 1; $i <= 10; $i++) {
-                $result = $numberForTable * $i;
-                echo "<p>$numberForTable x $i = $result</p>";
-            }
-            ?>
-        </div>
+<div class="mb-4">
+        <form action="" method="post">
+        Number:<input type="text"  name="number" placeholder="Enter your number" required><br><br>
 
-<h3> 4.5 While Loop: Write a PHP script that will print all the numbers from 1 to n. </h3>
-        <div class="mb-4">
+        <input type="submit" value="Generate Multiplication Table">
+        </form>
+        <?php
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $n = $_POST["number"];
+        echo "<h3>Multiplication Table for $n</h3>";
+        for ($i = 1; $i <= 10; $i++) {
+        $result = $n * $i;
+        echo "$n x $i = $result <br>";
+    }
+}
+?>
+<br><br><br>
+
             
-            <?php
-            $n = 7; 
-            $counter = 1;
-            while ($counter <= $n) {
-                echo "<p>$counter</p>";
-                $counter++;
-            }
-            ?>
-        </div>
+<h3> 4.5 While Loop: Write a PHP script that will print all the numbers from 1 to n. </h3>
+
+<hr>
+<form action="" method="post">
+    <label for="range">Enter a number for the range:</label>
+    <input type="number" name="range" required>
+
+    <input type="submit" value="Print Numbers">
+    </form>
+
+    <?php
+    // While Loop Script
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $range = $_POST["range"];
+        echo "<h3>Numbers from 1 to $range</h3>";
+        $counter = 1;
+        while ($counter <= $range) {
+        echo "$counter ";
+        $counter++;
+        }
+        }
+        ?>
+
+        <hr>
+
+
 
 <h3> 4.6 Foreach Loop:Write a PHP script that will print all the elements of an array.</h3>
     <div class="mb-4">
