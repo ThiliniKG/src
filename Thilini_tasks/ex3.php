@@ -25,7 +25,7 @@ Lastname:<input type="text"  name="lastName" placeholder="Enter your last name" 
 
 <?php
 
-// PHP code to handle form submission and display the greeting
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -116,7 +116,7 @@ echo "<p>Length of the String: " . strlen($combinedString) . "</p>";
 
 
  
-    <!-- Bootstrap JS and jQuery (optional, for Bootstrap features) -->
+    
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
