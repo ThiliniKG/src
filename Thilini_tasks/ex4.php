@@ -14,10 +14,11 @@ include "header.php" ?>
     <label for="age">Age:</label>
     <input type="number" class="form-control" id="age" name="age" required>
     </div>
-    <button type="submit" class="btn btn-primary">Check Eligibility</button>
+    <button type="submit" class="btn btn-primary" name="submit">Check Eligibility</button>
     </form>
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if(isset($_POST["submit"])){
         $name = $_POST["name"];
         $age = $_POST["age"];
 
@@ -27,6 +28,7 @@ include "header.php" ?>
         echo "<p>$name, you are not eligible for voting.</p>";
         }
         }
+    }
         ?>
         </div>
 
@@ -57,13 +59,18 @@ include "header.php" ?>
         <input type="submit" value="Generate Multiplication Table">
         </form>
         <?php
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    if(isset($_POST["number"])) {
         $n = $_POST["number"];
         echo "<h3>Multiplication Table for $n</h3>";
         for ($i = 1; $i <= 10; $i++) {
-        $result = $n * $i;
-        echo "$n x $i = $result <br>";
+            $result = $n * $i;
+            echo "$n x $i = $result <br>";
+        }
+    } else {
+        
+        echo "<p>Please enter a valid number.</p>";
     }
 }
 ?>
@@ -78,20 +85,27 @@ include "header.php" ?>
     <input type="number" name="range" required>
 
     <input type="submit" value="Print Numbers">
-    </form>
+</form>
 
-    <?php
-    // While Loop Script
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    if(isset($_POST["range"])) {
         $range = $_POST["range"];
         echo "<h3>Numbers from 1 to $range</h3>";
         $counter = 1;
         while ($counter <= $range) {
-        echo "$counter ";
-        $counter++;
+            echo "$counter ";
+            $counter++;
         }
-        }
-        ?>
+    } else {
+      
+        echo "<p>Please enter a valid range.</p>";
+    }
+}
+?>
+
 
         <hr>
 
