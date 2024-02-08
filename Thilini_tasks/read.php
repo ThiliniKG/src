@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
                 <td>{$row['first_name']}</td>
                 <td>{$row['last_name']}</td>
                 <td>{$row['city']}</td>
-                <td>{$row['groupId']}</td>
+                <td>{$row['groupid']}</td>
               </tr>";
     }
 
