@@ -40,6 +40,9 @@
                 <a class="nav-link active"  href="ex5.php">ex5</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link active"  href="index1.php">ex7</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link active"  href="#reviews">Reviews</a>
               </li>
               <li class="nav-item">

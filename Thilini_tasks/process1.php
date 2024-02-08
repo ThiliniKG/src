@@ -1,4 +1,8 @@
 <?php
+$title="Exercise 7: CRUD APP-Thilini";
+include 'header.php';
+
+
 // Check if the 'submit' button in the form was clicked
 if (isset($_POST['submit'])) {
     // Retrieve data from the form and store it in variables
@@ -26,4 +30,6 @@ if (isset($_POST['submit'])) {
     // Close the database connection
     $conn->close();
 }
+
+include 'footer.php';
 ?>
