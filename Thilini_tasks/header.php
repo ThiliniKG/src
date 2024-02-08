@@ -37,7 +37,7 @@
                 <a class="nav-link active"  href="ex4.php">ex4</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active"  href="#alumni">Alumni</a>
+                <a class="nav-link active"  href="ex5.php">ex5</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active"  href="#reviews">Reviews</a>
