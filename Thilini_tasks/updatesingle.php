@@ -25,7 +25,7 @@ $row= mysqli_fetch_array($result);
 
 
     <div class="col">
-      <input type="text" class="form-control" placeholder="City" name="groupId" required value="<?php echo $row['groupId']; ?>">    
+      <input type="text" class="form-control" placeholder="Group ID" name="groupid" required value="<?php echo $row['groupid']; ?>">    
     </div>
 
 
@@ -49,7 +49,7 @@ if (isset($_POST['submit'])){
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $city = $_POST['city'];
-    $groupId = $_POST['groupId'];
+    $groupId = $_POST['groupid'];
     $query = mysqli_query($conn,"UPDATE studentsinfo set first_name='$fname', last_name='$lname',city='$city', groupId='$groupId' where id='$a'");
     if($query){
         echo "<h2>Your information is updated Successfully</h2>";
