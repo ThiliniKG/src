@@ -50,6 +50,7 @@ if (isset($_POST['submit'])){
     $lname = $_POST['lname'];
     $city = $_POST['city'];
     $groupId = $_POST['groupid'];
+    
     $query = mysqli_query($conn,"UPDATE studentsinfo set first_name='$fname', last_name='$lname',city='$city', groupid='$groupid' where id='$a'");
     if($query){
         echo "<h2>Your information is updated Successfully</h2>";

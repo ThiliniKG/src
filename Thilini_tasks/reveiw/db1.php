@@ -1,8 +1,8 @@
 <?php
 $servername="web-dev-env-main-db-1";
-$username="thilini";
-$password="damkum@211";
-$dbname="thilini";
+$username="root";
+$password="password";
+$dbname="ProjectHotPot";
 
 // create database connection
 $conn=new mysqli($servername,$username,$password,$dbname);
